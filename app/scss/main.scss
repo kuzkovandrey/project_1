@@ -220,3 +220,68 @@ body {
 
 	}
 }	
+
+
+//============ IDEAS ==================
+
+.ideas > .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.ideas {
+	background-color: #fbfaf8;
+	
+	&__title {
+		margin: 70px 0 30px;
+		color: #555555;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 800;
+		font-size: 30px;
+	}
+	&__description {
+		width: 750px;
+		text-align: center;
+		margin: 0 0 30px;
+		color: #555555;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 14px;
+		font-weight: 300;
+	}
+	&__examples {
+		width: 100%;
+	}
+
+}
+
+.purchase > .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.purchase  {
+	background: linear-gradient(to right, #211b19, #483025);
+	padding: 50px 0;
+	&__title {
+		margin: 0 0 15px;
+		color: #fff;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 500;
+		font-size: 28px;
+		&_grey {
+			color: #c7b299;
+		}
+	}
+	&__description {
+		margin: 0;
+		color: #615855;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 18px;
+		font-weight: 300;
+
+	}
+}
