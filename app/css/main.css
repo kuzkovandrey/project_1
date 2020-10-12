@@ -12,21 +12,19 @@ body {
   height: 100vh;
   background: no-repeat center url("../images/bg-image.jpg");
   background-size: cover; }
-  .main-screen__slider-button_direction_left {
+  .main-screen__slider-button {
     position: absolute;
     top: 50%;
-    left: 0;
-    height: 73px;
-    width: 40px;
-    margin-left: 80px; }
-  .main-screen__slider-button_direction_right {
-    position: absolute;
-    top: 50%;
-    right: 0px;
-    display: inline-block;
-    height: 73px;
-    width: 40px;
-    margin-right: 80px; }
+    padding: 15px;
+    transition: opacity 0.2s; }
+    .main-screen__slider-button:hover {
+      opacity: 0.5; }
+    .main-screen__slider-button_direction_left {
+      left: 0;
+      margin-left: 80px; }
+    .main-screen__slider-button_direction_right {
+      right: 0px;
+      margin-right: 80px; }
 
 .container {
   width: 100%;
@@ -110,8 +108,8 @@ body {
     .header__dot_active {
       background: none;
       border: 3px solid #968a8a;
-      height: 13px;
-      width: 13px; }
+      height: 12px;
+      width: 12px; }
 
 .button {
   color: #fff;
@@ -126,3 +124,47 @@ body {
   transition: background 0.2s; }
   .button:hover {
     background: #685a4d; }
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 70px 0;
+  background-color: #fff; }
+  .services__cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 275px; }
+    .services__cart:hover .services__description {
+      color: #c7b299;
+      transition: color 0.2s; }
+      .services__cart:hover .services__description::after {
+        background-color: #c7b299; }
+    .services__cart:hover .services__title {
+      color: #c7b299; }
+    .services__cart:hover .services__icon {
+      opacity: 0.7; }
+  .services__icon {
+    transition: opacity 0.2s; }
+  .services__title {
+    margin: 25px 0 20px;
+    color: #555555;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    transition: color 0.2s; }
+  .services__description {
+    margin: 0;
+    color: #8c8c8c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center; }
+    .services__description::after {
+      content: "";
+      display: block;
+      margin: 30px auto 0;
+      width: 70px;
+      height: 3px;
+      background-color: #f1eee9;
+      transition: background-color 0.2s; }

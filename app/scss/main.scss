@@ -16,21 +16,20 @@ body {
 	background-size: cover;
 	
 	&__slider-button {
+		position: absolute;
+		top: 50%;
+		padding: 15px;
+		transition: opacity 0.2s;
+		&:hover {
+			opacity: 0.5;
+		}
+
 		&_direction_left {
-			position: absolute;
-			top: 50%;
 			left: 0;
-			height: 73px;
-			width: 40px;
 			margin-left: 80px;
 		}
 		&_direction_right {
-			position: absolute;
-			top: 50%;
 			right: 0px;
-			display: inline-block;
-			height: 73px;
-			width: 40px;
 			margin-right: 80px;
 		}
 	}
@@ -133,8 +132,8 @@ body {
 		&_active {
 			background: none;
 			border: 3px solid #968a8a;
-			height: 13px;
-			width: 13px;
+			height: 12px;
+			width: 12px;
 		}
 	}
 
@@ -155,3 +154,69 @@ body {
 		background: #685a4d;
 	}
 }
+
+
+// ================ PRICE ==================
+
+.services {
+	display: flex;
+	justify-content: space-around;
+	padding: 70px 0;
+	background-color: #fff;
+
+	&__cart {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 275px;
+		&:hover {
+			.services {
+				&__description {
+					color: #c7b299;
+					transition: color 0.2s;
+					&::after {
+						background-color: #c7b299;
+					}
+				}
+				&__title {
+					color: #c7b299;
+				}
+				&__icon {
+					opacity: 0.7;
+				}
+			}
+		}
+	}
+	
+	&__icon {
+		transition: opacity 0.2s;
+	}
+
+	&__title {
+		margin: 25px 0 20px;
+		color: #555555;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 800;
+		font-size: 22px;
+		transition: color 0.2s;
+	}
+	&__description {
+		margin: 0;
+		color: #8c8c8c;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 14px;
+		font-weight: 300;
+		text-align: center;
+
+		&::after {
+			content: "";
+			display: block;
+			margin: 30px auto 0;
+			width: 70px;
+			height: 3px;
+			background-color: #f1eee9;
+			transition: background-color 0.2s;
+		}
+
+	}
+}	
