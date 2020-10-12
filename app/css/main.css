@@ -53,12 +53,14 @@ body {
     .toolbar__link:last-child {
       margin-right: 0; }
   .toolbar__cart {
-    height: 20px;
-    width: 17px;
+    padding: 2px;
+    height: 24px;
+    width: 18px;
     margin-right: 25px; }
   .toolbar__search {
-    height: 20px;
-    width: 20px; }
+    padding: 2px;
+    height: 24px;
+    width: 19px; }
 
 .header {
   height: 100vh;
