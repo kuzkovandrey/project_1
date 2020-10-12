@@ -30,7 +30,7 @@ body {
 	position: relative;
 	width: 100%;
 	height: 100vh;
-	background: no-repeat center url("/images/bg-image.jpg");
+	background: no-repeat center url("../images/bg-image.jpg");
 	background-size: 100%;
 	&__inner {
 		display: flex;
@@ -113,7 +113,7 @@ body {
 		transition: background 0.2s;
 
 		&:hover {
-			background: blue;
+			background: #685a4d;
 		}
 	}
 }
@@ -129,7 +129,7 @@ body {
 		width: 10px;
 		//border: 2px solid #968a8a;
 		background: #968a8a;
-		border-radius: 6px;
+		border-radius: 10px;
 		margin-right: 10px;
 
 		&:last-child {
@@ -139,8 +139,8 @@ body {
 		&_active {
 			background: none;
 			border: 3px solid #968a8a;
-			height: 10px;
-			width: 10px;
+			height: 13px;
+			width: 13px;
 		}
 	}
 }
