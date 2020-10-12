@@ -12,6 +12,21 @@ body {
   height: 100vh;
   background: no-repeat center url("../images/bg-image.jpg");
   background-size: cover; }
+  .main-screen__slider-button_direction_left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 73px;
+    width: 40px;
+    margin-left: 80px; }
+  .main-screen__slider-button_direction_right {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    display: inline-block;
+    height: 73px;
+    width: 40px;
+    margin-right: 80px; }
 
 .container {
   width: 100%;
