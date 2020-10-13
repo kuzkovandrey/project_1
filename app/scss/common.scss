@@ -1,0 +1,49 @@
+$primary-font-family: 'Raleway', Arial, sans-serif;
+$secondary-font-family: 'Montserrat', Arial, sans-serif;
+$white-color: #ffffff;
+$black-color: #000000;
+$dark-grey-color: #555555;
+$grey-color: #8c8c8c;
+$light-grey-color: #d1d1d1;
+$beige-color: #998675;
+$light-beige-color: #c7b299;
+
+@import "main-screen";
+@import "price";
+@import "ideas";
+@import "projects";
+
+body {
+	font-family: 'Montserrat', Arial, sans-serif;
+	color: $black-color;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.button {
+	color: $white-color;
+	font-size: 14px;
+	font-family: $primary-font-family;
+	font-weight: 500;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 20px 50px;
+	background: $beige-color;
+	border-radius: 5px;
+	transition: background 0.2s;
+	cursor: pointer;
+
+	&:hover {
+		background: #685a4d;
+	}
+}
