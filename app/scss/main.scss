@@ -1,6 +1,17 @@
+$primary-font-family: 'Raleway', Arial, sans-serif;
+$secondary-font-family: 'Montserrat', Arial, sans-serif;
+$white-color: #ffffff;
+$black-color: #000000;
+$dark-grey-color: #555555;
+$grey-color: #8c8c8c;
+$light-grey-color: #d1d1d1;
+$beige-color: #998675;
+$light-beige-color: #c7b299;
+
+
 body {
-	font-family: 'Montserrat', sans-serif;
-	color: #000;
+	font-family: 'Montserrat', Arial, sans-serif;
+	color: $black-color;
 }
 
 * {
@@ -49,23 +60,24 @@ body {
 	width: 180px;
 }
 
-.toolbar {
+.menu {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 40px;
 
 	&__link {
-		padding: 5px;
+		padding: 10px 15px;
 		font-size: 14px;
 		font-weight: 300;
 		text-decoration: none;
-		color: #fff;
-		margin-right: 25px;
+		color: $white-color;
+		//margin-right: 25px;
 		transition: color 0.2s;
 
 		&:hover {
-			color: #c7b299;
+			color: $beige-color;
+			opacity: 0.8;
 		}
 
 		&:last-child {
@@ -93,32 +105,32 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 
-	&__intro {
+	&__slider {
 		margin: 0 auto;
 		width: 100%;
 		max-width: 600px;
 		text-align: center;
 		line-height: 1;
-		color: #fff;
+		color: $white-color;
 	}
 
 	&__suptitle {
 		margin: 0 0 15px;
-		font-family: 'Raleway', sans-serif;
+		font-family: $primary-font-family;
 		font-size: 36px;
 		font-weight: 400;
 	}
 
 	&__title {
 		margin: 0 0 15px;
-		font-family: 'Raleway', sans-serif;
+		font-family: $primary-font-family;
 		font-size: 52px;
 		font-weight: 800;
 	}
 
 	&__description {
 		margin: 0;
-		font-family: 'Montserrat', sans-serif;
+		font-family: $secondary-font-family;
 		font-size: 16px;
 		font-weight: 300;
 	}
@@ -128,7 +140,7 @@ body {
 		margin-top: 50px;	
 	}
 
-	&__carousel-indicators {
+	&__slider-indicators {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -136,17 +148,17 @@ body {
 		margin-bottom: 40px; 
 	}
 
-	&__carousel-item {
+	&__slider-item {
 		display: inline-block;
 		height: 10px;
 		width: 10px;
-		background: #968a8a;
+		background: $grey-color;
 		border-radius: 10px;
 		margin-right: 10px;
 		
 		&--active {
 			background: none;
-			border: 3px solid #968a8a;
+			border: 2px solid $grey-color;
 			height: 16px;
 			width: 16px;
 		}
@@ -158,14 +170,14 @@ body {
 }
 
 .button {
-	color: #fff;
+	color: $white-color;
 	font-size: 14px;
-	font-family: 'Raleway', sans-serif;
+	font-family: $primary-font-family;
 	font-weight: 500;
 	text-decoration: none;
 	text-transform: uppercase;
 	padding: 20px 50px;
-	background: #998675;
+	background: $beige-color;
 	border-radius: 5px;
 	transition: background 0.2s;
 	cursor: pointer;
@@ -181,7 +193,7 @@ body {
 	display: flex;
 	justify-content: space-around;
 	padding: 70px 0;
-	background-color: #fff;
+	background-color: $white-color;
 
 	&__card {
 		display: flex;
@@ -192,16 +204,16 @@ body {
 		&:hover {
 			.services {
 				&__description {
-					color: #c7b299;
+					color: $light-beige-color;
 					transition: color 0.2s;
 
 					&::after {
-						background-color: #c7b299;
+						background-color: $light-beige-color;
 					}
 				}
 
 				&__title {
-					color: #c7b299;
+					color: $light-beige-color;
 				}
 
 				&__icon {
@@ -217,8 +229,8 @@ body {
 
 	&__title {
 		margin: 25px 0 20px;
-		color: #555555;
-		font-family: 'Raleway', sans-serif;
+		color: $dark-grey-color;
+		font-family: $primary-font-family;
 		font-weight: 800;
 		font-size: 22px;
 		transition: color 0.2s;
@@ -226,9 +238,8 @@ body {
 
 	&__description {
 		margin: 0;
-		color: #8c8c8c;
-		font-family: 'Montserrat', sans-serif;
-		font-size: 14px;
+		color: $beige-color;
+		font-family: $secondary-font-family;
 		font-weight: 300;
 		text-align: center;
 
@@ -238,7 +249,8 @@ body {
 			margin: 30px auto 0;
 			width: 70px;
 			height: 3px;
-			background-color: #f1eee9;
+			background-color: $light-grey-color;
+			opacity: 0.8;
 			transition: background-color 0.2s;
 		}
 	}
@@ -259,8 +271,8 @@ body {
 	
 	&__title {
 		margin: 70px 0 30px;
-		color: #555555;
-		font-family: 'Raleway', sans-serif;
+		color: $dark-grey-color;
+		font-family: $primary-font-family;
 		font-weight: 800;
 		font-size: 30px;
 	}
@@ -269,8 +281,8 @@ body {
 		width: 750px;
 		text-align: center;
 		margin: 0 0 30px;
-		color: #555555;
-		font-family: 'Montserrat', sans-serif;
+		color: $dark-grey-color;
+		font-family: $secondary-font-family;
 		font-size: 16px;
 		font-weight: 300;
 	}
@@ -295,19 +307,19 @@ body {
 	&__title {
 		margin: 0;
 		color: #fff;
-		font-family: 'Raleway', sans-serif;
+		font-family: $primary-font-family;
 		font-weight: 500;
 		font-size: 28px;
 
 		&_grey {
-			color: #c7b299;
+			color: $light-beige-color;
 		}
 	}
 
 	&__description {
 		margin: 0;
-		color: #615855;
-		font-family: 'Montserrat', sans-serif;
+		color: $grey-color;
+		font-family: $secondary-font-family;
 		font-size: 18px;
 		font-weight: 300;
 	}
@@ -331,8 +343,8 @@ body {
 .projects {
 	&__title {
 		margin: 70px 0 30px;
-		color: #555555;
-		font-family: 'Raleway', sans-serif;
+		color: $dark-grey-color;
+		font-family: $primary-font-family;
 		font-weight: 800;
 		font-size: 30px;
 	}
@@ -340,8 +352,8 @@ body {
 	&__description {
 		width: 850px;
 		text-align: center;
-		color: #555555;
-		font-family: 'Montserrat', sans-serif;
+		color: $dark-grey-color;
+		font-family: $secondary-font-family;
 		font-size: 16px;
 		font-weight: 300;
 	}
@@ -360,18 +372,18 @@ body {
 
 	&__item {
 		text-decoration: none;
-		color: #998675;
+		color: $beige-color;
 		font-size: 14px;
-		font-family: 'Montserrat', sans-serif;
+		font-family: $secondary-font-family;
 		font-weight: 500;
-		border: 2px #998675 solid;
+		border: 2px $beige-color solid;
 		border-radius: 5px;
 		padding: 10px 20px;
 		margin-right: 10px;
 
 		&--active {
-			background-color: #998675;
-			color: #fff;
+			background-color: $beige-color;
+			color: $white-color;
 		}
 
 		&:last-child {
@@ -475,9 +487,9 @@ body {
 	}
 
 	&__title {
-		color: #c7b299;
+		color: #998675;
 		transition: color 0.3s;
-		font-family: 'Raleway', sans-serif;
+		font-family: $primary-font-family;
 		font-weight: 500;
 		font-size: 20px;
 		margin-bottom: 15px;
@@ -485,7 +497,7 @@ body {
 
 	&__description {
 		color: #d1d1d1;
-		font-family: 'Montserrat', sans-serif;
+		font-family: $secondary-font-family;
 		font-size: 14px;
 		font-weight: 300;
 		transition: color 0.3s;

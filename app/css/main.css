@@ -1,6 +1,6 @@
 body {
-  font-family: 'Montserrat', sans-serif;
-  color: #000; }
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #000000; }
 
 * {
   box-sizing: border-box;
@@ -36,29 +36,29 @@ body {
   height: 55px;
   width: 180px; }
 
-.toolbar {
+.menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 40px; }
-  .toolbar__link {
-    padding: 5px;
+  .menu__link {
+    padding: 10px 15px;
     font-size: 14px;
     font-weight: 300;
     text-decoration: none;
-    color: #fff;
-    margin-right: 25px;
+    color: #ffffff;
     transition: color 0.2s; }
-    .toolbar__link:hover {
-      color: #c7b299; }
-    .toolbar__link:last-child {
+    .menu__link:hover {
+      color: #998675;
+      opacity: 0.8; }
+    .menu__link:last-child {
       margin-right: 0; }
-  .toolbar__cart {
+  .menu__cart {
     padding: 2px;
     height: 24px;
     width: 18px;
     margin-right: 25px; }
-  .toolbar__search {
+  .menu__search {
     padding: 2px;
     height: 24px;
     width: 19px; }
@@ -68,56 +68,56 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-  .header__intro {
+  .header__slider {
     margin: 0 auto;
     width: 100%;
     max-width: 600px;
     text-align: center;
     line-height: 1;
-    color: #fff; }
+    color: #ffffff; }
   .header__suptitle {
     margin: 0 0 15px;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", Arial, sans-serif;
     font-size: 36px;
     font-weight: 400; }
   .header__title {
     margin: 0 0 15px;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", Arial, sans-serif;
     font-size: 52px;
     font-weight: 800; }
   .header__description {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     font-size: 16px;
     font-weight: 300; }
   .header__button {
     display: inline-block;
     margin-top: 50px; }
-  .header__carousel-indicators {
+  .header__slider-indicators {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-bottom: 40px; }
-  .header__carousel-item {
+  .header__slider-item {
     display: inline-block;
     height: 10px;
     width: 10px;
-    background: #968a8a;
+    background: #8c8c8c;
     border-radius: 10px;
     margin-right: 10px; }
-    .header__carousel-item--active {
+    .header__slider-item--active {
       background: none;
-      border: 3px solid #968a8a;
+      border: 2px solid #8c8c8c;
       height: 16px;
       width: 16px; }
-    .header__carousel-item:last-child {
+    .header__slider-item:last-child {
       margin-right: 0px; }
 
 .button {
-  color: #fff;
+  color: #ffffff;
   font-size: 14px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
@@ -133,7 +133,7 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 70px 0;
-  background-color: #fff; }
+  background-color: #ffffff; }
   .services__card {
     display: flex;
     flex-direction: column;
@@ -153,15 +153,14 @@ body {
   .services__title {
     margin: 25px 0 20px;
     color: #555555;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", Arial, sans-serif;
     font-weight: 800;
     font-size: 22px;
     transition: color 0.2s; }
   .services__description {
     margin: 0;
-    color: #8c8c8c;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    color: #998675;
+    font-family: "Montserrat", Arial, sans-serif;
     font-weight: 300;
     text-align: center; }
     .services__description::after {
@@ -170,7 +169,8 @@ body {
       margin: 30px auto 0;
       width: 70px;
       height: 3px;
-      background-color: #f1eee9;
+      background-color: #d1d1d1;
+      opacity: 0.8;
       transition: background-color 0.2s; }
 
 .ideas > .container {
@@ -184,7 +184,7 @@ body {
   .ideas__title {
     margin: 70px 0 30px;
     color: #555555;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", Arial, sans-serif;
     font-weight: 800;
     font-size: 30px; }
   .ideas__description {
@@ -192,7 +192,7 @@ body {
     text-align: center;
     margin: 0 0 30px;
     color: #555555;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     font-size: 16px;
     font-weight: 300; }
   .ideas__examples {
@@ -209,15 +209,15 @@ body {
   .purchase__title {
     margin: 0;
     color: #fff;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", Arial, sans-serif;
     font-weight: 500;
     font-size: 28px; }
     .purchase__title_grey {
       color: #c7b299; }
   .purchase__description {
     margin: 0;
-    color: #615855;
-    font-family: 'Montserrat', sans-serif;
+    color: #8c8c8c;
+    font-family: "Montserrat", Arial, sans-serif;
     font-size: 18px;
     font-weight: 300; }
 
@@ -234,7 +234,7 @@ body {
 .projects__title {
   margin: 70px 0 30px;
   color: #555555;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-weight: 800;
   font-size: 30px; }
 
@@ -242,7 +242,7 @@ body {
   width: 850px;
   text-align: center;
   color: #555555;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 16px;
   font-weight: 300; }
 
@@ -258,7 +258,7 @@ body {
     text-decoration: none;
     color: #998675;
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     font-weight: 500;
     border: 2px #998675 solid;
     border-radius: 5px;
@@ -266,7 +266,7 @@ body {
     margin-right: 10px; }
     .tabs__item--active {
       background-color: #998675;
-      color: #fff; }
+      color: #ffffff; }
     .tabs__item:last-child {
       margin-right: 0; }
 
@@ -335,15 +335,15 @@ body {
       border-bottom: 10px solid #fbfaf8;
       transition: border 0.3s; }
   .project-card__title {
-    color: #c7b299;
+    color: #998675;
     transition: color 0.3s;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", Arial, sans-serif;
     font-weight: 500;
     font-size: 20px;
     margin-bottom: 15px; }
   .project-card__description {
     color: #d1d1d1;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     font-size: 14px;
     font-weight: 300;
     transition: color 0.3s; }
