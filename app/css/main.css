@@ -142,14 +142,14 @@
       background-color: #d1d1d1;
       opacity: 0.8;
       transition: background-color 0.2s; }
-  .service-card:hover .services__description {
+  .service-card:hover .service-card__description {
     color: #c7b299;
     transition: color 0.2s; }
-    .service-card:hover .services__description::after {
+    .service-card:hover .service-card__description::after {
       background-color: #c7b299; }
-  .service-card:hover .services__title {
+  .service-card:hover .service-card__title {
     color: #c7b299; }
-  .service-card:hover .services__icon {
+  .service-card:hover .service-card__icon {
     opacity: 0.7; }
 
 .ideas > .container {
@@ -395,6 +395,49 @@
     background: center url(../images/list.png);
     width: 21px;
     height: 21px; }
+
+.achievements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #211b19, #483025);
+  padding: 60px 0 80px; }
+
+.achievement-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 120px;
+  color: #ffffff;
+  margin-right: 70px; }
+  .achievement-card__icon {
+    margin-bottom: 20px; }
+  .achievement-card__count {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 15px; }
+  .achievement-card__description {
+    font-family: "Montserrat", Arial, sans-serif;
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 300;
+    position: relative;
+    display: inline-block; }
+    .achievement-card__description::after {
+      content: "";
+      width: 30px;
+      height: 3px;
+      background-color: #ffffff;
+      position: absolute;
+      bottom: -20px;
+      right: 50%;
+      transform: translateX(50%);
+      text-align: center; }
+  .achievement-card:last-child {
+    margin-right: 0; }
 
 body {
   font-family: 'Montserrat', Arial, sans-serif;
