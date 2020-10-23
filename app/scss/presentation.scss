@@ -1,0 +1,39 @@
+.presentation {
+	position: relative;
+	width: 100%;
+	max-height: 700px;
+	background-color: $black-color;
+
+	&__bg-video {
+		opacity: 0.7;
+		width: 100%;
+		max-height: 700px; 
+		object-fit: cover;
+	}
+
+	&__info-container {
+		max-width: 600px;
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: center;
+	}
+
+	&__title {
+		font-family: $primary-font-family;
+		font-weight: 800;
+		font-size: 30px;
+		color: $white-color;
+		margin-bottom: 25px;
+	}
+
+	&__description {
+		line-height: 2;
+		font-family: $secondary-font-family;
+		font-weight: 300;
+		font-size: 16px;
+		color: $white-color;
+	}
+
+}

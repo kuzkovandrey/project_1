@@ -325,6 +325,36 @@
     .project-card:hover .project-card__images {
       filter: brightness(0.5); }
 
+.presentation {
+  position: relative;
+  width: 100%;
+  max-height: 700px;
+  background-color: #000000; }
+  .presentation__bg-video {
+    opacity: 0.7;
+    width: 100%;
+    max-height: 700px;
+    object-fit: cover; }
+  .presentation__info-container {
+    max-width: 600px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center; }
+  .presentation__title {
+    font-family: "Raleway", Arial, sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 25px; }
+  .presentation__description {
+    line-height: 2;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #ffffff; }
+
 body {
   font-family: 'Montserrat', Arial, sans-serif;
   color: #000000; }
