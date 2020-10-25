@@ -18,10 +18,15 @@ $light-beige-color: #c7b299;
 @import "blog";
 @import "partners";
 @import "footer";
+@import "adaptive";
 
 body {
 	font-family: 'Montserrat', Arial, sans-serif;
 	color: $black-color;
+}
+
+main {
+	overflow-x: hidden;
 }
 
 * {

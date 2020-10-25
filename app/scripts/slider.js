@@ -11,7 +11,6 @@ function currentSlide(n) {
 	timer = setInterval(() => {
 		showSlides(++slideIndex);
 		}, interval);
-
 }
 
 function showSlides(index) {
@@ -60,4 +59,5 @@ rightButton.addEventListener("click", (e) => {
 		}, interval);
 });
 
-showSlides(slideIndex);
+showSlides(slideIndex); 
+
