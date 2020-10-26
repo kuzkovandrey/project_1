@@ -3,7 +3,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 70px 0 140px;
+	padding: 70px 0 70px;
 
 	&__title {
 		margin-bottom: 30px;
@@ -15,13 +15,13 @@
 
 	&__description {
 		display: inline-block;
-		width: 850px;
+		max-width: 850px;
 		text-align: center;
 		color: $dark-grey-color;
 		font-family: $secondary-font-family;
 		font-size: 16px;
 		font-weight: 300;
-		margin-bottom: 40px;
+		margin: 0 30px 40px;
 	}
 }
 
@@ -29,13 +29,15 @@
 	position: relative;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 
 	&__buttons {
 		position: absolute;
-		bottom: -80px;
+		bottom: 0px;
 		right: 50%;
+		transform: translateX(50%);
 	}
 
 	&__button {
@@ -63,7 +65,7 @@
 .post-card {
 	width: 370px;
 	border: 1px solid #eeeeee;
-	margin-right: 30px;
+	margin: 0 15px 70px;
 	position: relative;
 	background-color: $white-color;
 	transition: background-color 0.2s;
@@ -103,7 +105,6 @@
 
 	&__image {
 		width: 100%;
-		height: 220px;
 		transition: filter 0.2s;
 	}
 

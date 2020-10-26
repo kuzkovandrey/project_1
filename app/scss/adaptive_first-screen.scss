@@ -19,6 +19,7 @@
 		z-index: 5;
 		background-color: $dark-grey-color;
 		height: 100vh;
+		min-height: 500px;
 		padding: 50px 60px;
 		position: absolute;
 		top: 0;
@@ -79,19 +80,10 @@
 	}
 }
 
-
-@media (max-width: 580px) {
-	
-}
-
 @media (max-width: 480px) {
 	.slider {
 		&__indicators {
 			display: none;
 		}
 	}
-}
-
-@media (max-width: 320px) {
-
 }

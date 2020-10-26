@@ -1,0 +1,35 @@
+@media (max-width: 767px) {
+	.presentation {
+		&__title {
+			font-size: 24px;
+		}
+
+		&__description {
+			font-size: 14px;
+		}
+
+		&__info-container {
+			min-width: 300px;
+		}
+	}
+}
+
+@media (max-width: 580px) {
+	.presentation {
+		&__description {
+			line-height: 1.1;
+		}
+
+		&__info-container {
+			top: 20%;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.presentation {
+		&__title {
+			margin-bottom: 10px;
+		} 
+	}
+}

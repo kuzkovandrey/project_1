@@ -1,0 +1,29 @@
+@media (max-width: 1200px) {
+	.partners {
+		&__logo {
+			margin: 30px 100px;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.partners {
+		&__logo {
+			margin: 30px 50px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.partners {
+		flex-direction: column;
+
+		&__logo {
+			margin: 30px 0px;
+		}
+	}
+
+	.cooperation {
+		padding: 100px 20px;
+	}
+}

@@ -1,0 +1,11 @@
+@media (max-width: 767px) {
+	.post-card {
+		margin-bottom: 40px;
+	}
+
+	.post-slider {
+		&__buttons {
+			bottom: -30px;
+		}
+	}
+}

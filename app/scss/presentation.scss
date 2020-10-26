@@ -12,10 +12,11 @@
 	}
 
 	&__info-container {
-		max-width: 600px;
+		//max-width: 600px;
 		position: absolute;
-		top: 45%;
+		top: 30%;
 		left: 50%;
+		text-align: center;
 		transform: translateX(-50%);
 		text-align: center;
 	}

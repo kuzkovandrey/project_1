@@ -2,12 +2,13 @@
 
 	&__other-info {
 		background-color: #191919;
-		padding: 70px 0;
+		padding: 70px 0 0;
 
 		& > .container {
 			display: flex;
 			flex-direction: row;
-			justify-content: space-between;
+			flex-wrap: wrap;
+			justify-content: center;
 			align-items: flex-start;
 		}
 	}
@@ -15,6 +16,7 @@
 
 .common {
 	max-width: 270px;
+	margin: 0 10px 70px;
 	
 	&__logo {
 		height: 60px;
@@ -67,6 +69,7 @@
 
 .recent-posts {
 	max-width: 270px;
+	margin: 0 10px 70px;
 
 	&__post {
 		text-decoration: none;
@@ -125,6 +128,7 @@
 
 .social {
 	max-width: 270px;
+	margin: 0 10px 70px;
 
 	&__title {
 		color: $white-color;
@@ -169,6 +173,7 @@
 
 .widget {
 	max-width: 270px;
+	margin: 0 10px 70px;
 
 	&__title {
 		color: $white-color;
@@ -200,10 +205,14 @@
 	font-size: 14px;
 	font-weight: 300;
 	background-color: #111111;
-	padding: 45px 0;
+	padding: 45px 20px;
 
 	&__info {
-
+		display: flex;
+		flex-direction: row;
+		width: 420px;
+		justify-content: space-between;
+		align-items: center;
 		& > a {
 			color: $light-grey-color;
 			transition: color 0.2s;
@@ -211,6 +220,14 @@
 				color: $beige-color;
 			}
 		}
+	}
+
+	&__developers {
+		display: flex;
+		flex-direction: row;
+		width: 470px;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	&__designer > a,
@@ -227,9 +244,9 @@
 
 	& > .container {
 		display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: center;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	&__copyright > a {
@@ -248,5 +265,8 @@
 		margin-right: 20px; 
 		text-decoration: none;
 		transition: color 0.2s;
+		&:last-child {
+			margin-right: 0; 
+		}
 	}
 }
