@@ -19,18 +19,6 @@ $light-beige-color: #c7b299;
 @import "partners";
 @import "footer";
 
-@import "adaptive_first-screen";
-@import "adaptive_services";
-@import "adaptive_ideas";
-@import "adaptive_projects";
-@import "adaptive_presentation";
-@import "adaptive_mobile-preview";
-@import "adaptive_achievements";
-@import "adaptive_blog";
-@import "adaptive_partners";
-@import "adaptive_footer";
-
-
 body {
 	font-family: 'Montserrat', Arial, sans-serif;
 	color: $black-color;
@@ -71,9 +59,7 @@ main {
 }
 
 @media (max-width: 480px) {
-
 	.button {
 		padding: 20px 30px;
 	}
-
 }

@@ -54,3 +54,37 @@
 		}
 	}
 }
+
+@media (max-width: 1200px) {
+	.mobile-preview {
+		&__examles {
+			margin-left: 40px;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.mobile-preview {
+		padding: 50px 50px;
+
+		&__image {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.mobile-preview {
+		&__title {
+			font-size: 25px;
+		}
+
+		&__description {
+			font-size: 14px;
+		}
+
+		&__examles {
+			font-size: 14px;
+		}
+	}
+}

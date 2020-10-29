@@ -66,3 +66,15 @@
 		}
 	}
 }
+
+@media (max-width: 1200px) {
+	.service-card {
+		margin: 0 100px 70px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.service-card {
+		margin: 0 50px 70px;
+	}
+}
