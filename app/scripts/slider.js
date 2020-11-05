@@ -1,5 +1,5 @@
 let slideIndex   = 0;
-let indicators   = document.getElementsByClassName("slider__item");
+let indicators   = document.getElementsByClassName("indicators__item");
 let slides 		 = document.getElementsByClassName("slider__slide");
 let leftButton   = document.getElementsByClassName("slider__side-button--direction_left")[0];
 let rightButton  = document.getElementsByClassName("slider__side-button--direction_right")[0];
